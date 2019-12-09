@@ -13,6 +13,7 @@
 		3423504B239EA0BD00C1DBFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34235049239EA0BD00C1DBFA /* Main.storyboard */; };
 		3423504D239EA0C300C1DBFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3423504C239EA0C300C1DBFA /* Assets.xcassets */; };
 		34235050239EA0C300C1DBFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3423504E239EA0C300C1DBFA /* LaunchScreen.storyboard */; };
+		3423505B239EA36700C1DBFA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423505A239EA36700C1DBFA /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3423504C239EA0C300C1DBFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3423504F239EA0C300C1DBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34235051239EA0C300C1DBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3423505A239EA36700C1DBFA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		34235042239EA0BD00C1DBFA /* testeLiveTouch */ = {
 			isa = PBXGroup;
 			children = (
-				34235043239EA0BD00C1DBFA /* AppDelegate.swift */,
-				34235045239EA0BD00C1DBFA /* SceneDelegate.swift */,
-				34235047239EA0BD00C1DBFA /* ViewController.swift */,
-				34235049239EA0BD00C1DBFA /* Main.storyboard */,
 				3423504C239EA0C300C1DBFA /* Assets.xcassets */,
-				3423504E239EA0C300C1DBFA /* LaunchScreen.storyboard */,
+				34235057239EA30200C1DBFA /* Model */,
+				34235058239EA30B00C1DBFA /* View */,
+				34235059239EA31400C1DBFA /* Controller */,
 				34235051239EA0C300C1DBFA /* Info.plist */,
 			);
 			path = testeLiveTouch;
+			sourceTree = "<group>";
+		};
+		34235057239EA30200C1DBFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3423505A239EA36700C1DBFA /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		34235058239EA30B00C1DBFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34235049239EA0BD00C1DBFA /* Main.storyboard */,
+				3423504E239EA0C300C1DBFA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34235059239EA31400C1DBFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34235043239EA0BD00C1DBFA /* AppDelegate.swift */,
+				34235045239EA0BD00C1DBFA /* SceneDelegate.swift */,
+				34235047239EA0BD00C1DBFA /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				34235048239EA0BD00C1DBFA /* ViewController.swift in Sources */,
 				34235044239EA0BD00C1DBFA /* AppDelegate.swift in Sources */,
 				34235046239EA0BD00C1DBFA /* SceneDelegate.swift in Sources */,
+				3423505B239EA36700C1DBFA /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
