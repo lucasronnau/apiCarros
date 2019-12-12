@@ -1,0 +1,6 @@
+framework module Pods_testeLiveTouch {
+  umbrella header "Pods-testeLiveTouch-umbrella.h"
+
+  export *
+  module * { export * }
+}

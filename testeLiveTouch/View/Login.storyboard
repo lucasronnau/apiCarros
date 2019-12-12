@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qmD-Pz-A8U">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="C6s-M6-lOb">
+            <objects>
+                <viewController id="qmD-Pz-A8U" customClass="loginViewController" customModule="testeLiveTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ph5-Ww-S0g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOo-ye-rlu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Roa-5t-PWR">
+                                        <rect key="frame" x="41.5" y="79" width="331" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Senha" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dce-ml-NTI">
+                                        <rect key="frame" x="41.5" y="183" width="331" height="53.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember my account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwk-2g-j3v">
+                                        <rect key="frame" x="41.5" y="286.5" width="265" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ajo-bh-L2G">
+                                        <rect key="frame" x="306.5" y="281.5" width="68" height="31"/>
+                                        <connections>
+                                            <action selector="rememberMyAccount:" destination="iUL-fc-fbD" eventType="valueChanged" id="3gW-fd-NhB"/>
+                                            <action selector="switchRememberMe:" destination="iUL-fc-fbD" eventType="valueChanged" id="xld-KA-uhA"/>
+                                        </connections>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDN-sk-C59">
+                                        <rect key="frame" x="41.5" y="357.5" width="331" height="54"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign in">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31078767619999997" green="1" blue="0.33092752530000002" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="WDN-sk-C59" firstAttribute="width" secondItem="Roa-5t-PWR" secondAttribute="width" id="4vl-iC-Gi4"/>
+                                    <constraint firstItem="Roa-5t-PWR" firstAttribute="centerX" secondItem="YOo-ye-rlu" secondAttribute="centerX" id="8xS-Kh-EmO"/>
+                                    <constraint firstItem="Roa-5t-PWR" firstAttribute="top" secondItem="YOo-ye-rlu" secondAttribute="top" constant="79" id="9BT-Cp-imP"/>
+                                    <constraint firstItem="Lwk-2g-j3v" firstAttribute="width" secondItem="dce-ml-NTI" secondAttribute="width" multiplier="0.8" id="IVK-YO-CAs"/>
+                                    <constraint firstItem="dce-ml-NTI" firstAttribute="height" secondItem="Roa-5t-PWR" secondAttribute="height" id="Jzg-xR-4Db"/>
+                                    <constraint firstItem="ajo-bh-L2G" firstAttribute="width" secondItem="dce-ml-NTI" secondAttribute="width" multiplier="0.2" id="KDH-ry-0OW"/>
+                                    <constraint firstItem="Roa-5t-PWR" firstAttribute="width" secondItem="YOo-ye-rlu" secondAttribute="width" multiplier="0.8" id="NWv-ZW-8IJ"/>
+                                    <constraint firstItem="dce-ml-NTI" firstAttribute="centerX" secondItem="YOo-ye-rlu" secondAttribute="centerX" id="OcH-ud-gks"/>
+                                    <constraint firstItem="dce-ml-NTI" firstAttribute="top" secondItem="Roa-5t-PWR" secondAttribute="bottom" constant="50" id="Oo9-bM-pug"/>
+                                    <constraint firstItem="WDN-sk-C59" firstAttribute="height" secondItem="Roa-5t-PWR" secondAttribute="height" id="WXV-ii-ORJ"/>
+                                    <constraint firstItem="ajo-bh-L2G" firstAttribute="leading" secondItem="Lwk-2g-j3v" secondAttribute="trailing" id="cgr-gy-YEB"/>
+                                    <constraint firstItem="ajo-bh-L2G" firstAttribute="centerY" secondItem="Lwk-2g-j3v" secondAttribute="centerY" id="eZm-X2-04e"/>
+                                    <constraint firstItem="WDN-sk-C59" firstAttribute="leading" secondItem="Roa-5t-PWR" secondAttribute="leading" id="g8Q-HH-Pcp"/>
+                                    <constraint firstItem="Lwk-2g-j3v" firstAttribute="top" secondItem="dce-ml-NTI" secondAttribute="bottom" constant="50" id="jmO-51-dE2"/>
+                                    <constraint firstItem="WDN-sk-C59" firstAttribute="top" secondItem="Lwk-2g-j3v" secondAttribute="bottom" constant="50" id="lC8-z1-9l5"/>
+                                    <constraint firstItem="dce-ml-NTI" firstAttribute="width" secondItem="Roa-5t-PWR" secondAttribute="width" id="pQ0-IP-dW9"/>
+                                    <constraint firstItem="Lwk-2g-j3v" firstAttribute="leading" secondItem="Roa-5t-PWR" secondAttribute="leading" id="sAn-Wt-kze"/>
+                                    <constraint firstItem="Roa-5t-PWR" firstAttribute="height" secondItem="YOo-ye-rlu" secondAttribute="height" multiplier="0.12" id="yj7-ra-kRk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YOo-ye-rlu" firstAttribute="height" secondItem="ph5-Ww-S0g" secondAttribute="height" multiplier="0.5" id="T2r-Cl-wvg"/>
+                            <constraint firstItem="YOo-ye-rlu" firstAttribute="width" secondItem="ph5-Ww-S0g" secondAttribute="width" id="nyJ-Y6-bMP"/>
+                            <constraint firstItem="YOo-ye-rlu" firstAttribute="centerX" secondItem="c8i-vm-jBg" secondAttribute="centerX" id="xJd-gw-w9f"/>
+                            <constraint firstItem="YOo-ye-rlu" firstAttribute="top" secondItem="c8i-vm-jBg" secondAttribute="top" id="z3e-MV-S6B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c8i-vm-jBg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAJ-tr-Akm" sceneMemberID="firstResponder"/>
+                <exit id="iUL-fc-fbD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="130"/>
+        </scene>
+    </scenes>
+</document>
