@@ -16,7 +16,6 @@
 		3423505B239EA36700C1DBFA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423505A239EA36700C1DBFA /* Model.swift */; };
 		344E7D03239F3DFE00617273 /* testeFotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E7D02239F3DFE00617273 /* testeFotoViewController.swift */; };
 		344E7D05239F3F1800617273 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E7D04239F3F1800617273 /* Perfil.swift */; };
-		3456BAB9239EFEA50050F3D1 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3456BAB8239EFEA50050F3D1 /* credentials.plist */; };
 		34D4A48A239EA994007B739B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4A489239EA994007B739B /* loginViewController.swift */; };
 		34D4A48C239EAAB5007B739B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D4A48B239EAAB5007B739B /* Login.storyboard */; };
 		34F100D123A0474000A0EA56 /* Carros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F100D023A0474000A0EA56 /* Carros.swift */; };
@@ -39,7 +38,6 @@
 		3423505A239EA36700C1DBFA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		344E7D02239F3DFE00617273 /* testeFotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeFotoViewController.swift; sourceTree = "<group>"; };
 		344E7D04239F3F1800617273 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
-		3456BAB8239EFEA50050F3D1 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../Downloads/credentials.plist; sourceTree = "<group>"; };
 		34D4A489239EA994007B739B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		34D4A48B239EAAB5007B739B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		34F100D023A0474000A0EA56 /* Carros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carros.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				34235058239EA30B00C1DBFA /* View */,
 				34235059239EA31400C1DBFA /* Controller */,
 				34235051239EA0C300C1DBFA /* Info.plist */,
-				3456BAB8239EFEA50050F3D1 /* credentials.plist */,
 			);
 			path = testeLiveTouch;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 			files = (
 				34235050239EA0C300C1DBFA /* LaunchScreen.storyboard in Resources */,
 				3423504D239EA0C300C1DBFA /* Assets.xcassets in Resources */,
-				3456BAB9239EFEA50050F3D1 /* credentials.plist in Resources */,
 				3423504B239EA0BD00C1DBFA /* Main.storyboard in Resources */,
 				34D4A48C239EAAB5007B739B /* Login.storyboard in Resources */,
 			);
